@@ -9,5 +9,5 @@ name.startsWith('A'); // Descobrindo se uma String inicia com um determinado car
 name.endsWith('amilton'); // Descobrindo se uma String finaliza com um determinado caracter.
 console.log('hamilton gabriel macedo          '.trim()); // Removendo todo o espaco do inicio e do fim de uma String
 name.repeat(3); // Repetindo uma String com uma quantidade x de vezes.
-console.log(`Hello ${name}!`) // Usando Template Literal.
+console.log(`Hello ${name}!`); // Usando Template Literal.
 
