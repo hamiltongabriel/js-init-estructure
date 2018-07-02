@@ -48,4 +48,33 @@ const summer = ['Junho', 'Julho', 'Agosto'];
 const winter = ['Dezembro', 'Janeiro', 'Fevereiro'];
 const nested = [ summer, winter ];
 const flat = [...summer, ...winter]; // Juntando ambos os arrays.
-console.log(flat)
+
+// Sets (Conjuntos)
+const list = new Set(); // -> Inicializando um conjunto.
+list.add(1); // Adicionando um valor ao conjunto.
+list.add(2).add(3).add(4); // Adicionando mais de um valor.
+list.add(1); // Ao tentar adicionar um valor repetido, ele ignora o valor
+
+// Iniciando um conjunto com varios valores.
+const numbers = new Set([1, 2, 3]);
+const letters = new Set('hello');
+
+// Set Methodos;
+const jla = new Set().add('SuperMan').add('Batman').add('Wonder Woman');
+jla.has('SuperMan'); // Verificando se existe um determinado valor dentro do Sets.
+jla.delete('SuperMan'); // Deletando valores.
+
+// Converting Sets to Arrays -> (Convertendo Conjuntos para Arrays)
+const shoppingSet = new Set().add('Apples').add('Bananas').add('Beans');
+const shoppingArray = [...shoppingSet]; // Para converter um conjunto para um Array basta usar spread.
+// const shoppingArray = Array.from(shoppingSet); // tambem converte.
+const duplicate = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3, 5, 9];
+const nonDuplicate = [...new Set(duplicate)]; // Removendo duplicacao dos valores.
+
+// Weak Sets (Conjuntos Fracos)
+const weak = new WeakSet(); // Criando um conjunto fraco. Somente dados nao primitivos
+const array = [1, 2, 3];
+weak.add(array); // Nao conseguimos acessar a lista de valores que contem dentro do objeto
+weak.has(array); // Verificando se existe  o objeto dentro do conjunto.
+weak.delete(array); // Deletando o Objeto.
+
