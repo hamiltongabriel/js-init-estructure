@@ -78,3 +78,7 @@ weak.add(array); // Nao conseguimos acessar a lista de valores que contem dentro
 weak.has(array); // Verificando se existe  o objeto dentro do conjunto.
 weak.delete(array); // Deletando o Objeto.
 
+// Maps ( Mapas )
+const romanNumerals = new Map();
+romanNumerals.set(1, 'I'); // Chave -> Valor (chave: 1, Valor: 'I');
+romanNumerals.set(2, 'II').set(3, 'III').set(4, 'IV').set(5, 'V');
