@@ -87,7 +87,56 @@ romanNumerals.has(5); // Verificando se existe uma chave especifica.
 const heroess = new Map([ ['Clark Kent', 'Superman'], ['Bruce Wayne', 'Batman']]);
 heroess.size; // Descobrindo o tamanho.
 heroess.delete('Clark Kent'); // Deletando um valor especifico.
-heroes.clear(); // Deletando Todos
+heroess.clear(); // Deletando Todos
 [...romanNumerals]; // Convertendo Maps para Arrays usando operador spread.
 
 // Logic (Logica)
+const n = 5;
+console.log(` n is ${(n % 2 === 0) ? 'Even' : 'odd'} number`); // Ternary In Template String
+switch (n) {
+  case 4:
+    console.log('You rolled a four');
+    break;
+  case 5:
+    console.log('You rolled a five');
+    break;
+  default:
+    console.log('You rolled a number less than four');
+    break;
+}
+let bottles = 10;
+
+const total = 10;
+while (bottles > 0) { // Modo padrao
+  console.log(`Ja tomei ${(total - bottles)} sobrou ${bottles}`);
+  bottles--;
+}
+
+let bottless = 10;
+while (bottless--) { // Customizado
+  console.log(`There were ${bottless} green bottles, hanging on a wall. And if`);
+}
+
+let bottlesss = 10;
+do { // do while
+  console.log(`There were ${bottlesss} gren bottles, hanging on a wall. And if`);
+  bottlesss--;
+} while (bottlesss > 0);
+
+for (const value of avengers) { // Loop for off
+  /* Mesma coisa de
+  for(let i=0, max=avengers.length; i < max; i++){
+console.log(avengers[i]);
+} */
+  console.log(value);
+}
+
+for (const letter of letters) { // Fazendo um loop em um conjunto de letras
+  // Atraves do loop for of
+  console.log(letter);
+}
+
+for (const [key, value] of romanNumerals.entries()) { // Criando um loop com mapas
+  console.log(`${key} in roman numerals is ${value}`);
+}
+
