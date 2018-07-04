@@ -82,3 +82,12 @@ weak.delete(array); // Deletando o Objeto.
 const romanNumerals = new Map();
 romanNumerals.set(1, 'I'); // Chave -> Valor (chave: 1, Valor: 'I');
 romanNumerals.set(2, 'II').set(3, 'III').set(4, 'IV').set(5, 'V');
+romanNumerals.get(4); // Pegando a 4 posicao do array.
+romanNumerals.has(5); // Verificando se existe uma chave especifica.
+const heroess = new Map([ ['Clark Kent', 'Superman'], ['Bruce Wayne', 'Batman']]);
+heroess.size; // Descobrindo o tamanho.
+heroess.delete('Clark Kent'); // Deletando um valor especifico.
+heroes.clear(); // Deletando Todos
+[...romanNumerals]; // Convertendo Maps para Arrays usando operador spread.
+
+// Logic (Logica)
