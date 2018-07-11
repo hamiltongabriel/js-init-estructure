@@ -68,3 +68,19 @@ function discount(price, amount=10) {
 }
 console.log(discount(20, 11));
 console.log(discount(15, 20));
+//Arrow Functions
+// Arrow functions sao sempre anonimos. Devemos ter algo para atribuir, tipo uma variavel.
+// Parametros unicos nao precisam de parenteses
+const squareMelhorada = x => x*x;
+//two parameters
+const add = (x,y) => x + y;
+//Sem parametros
+const helloNoParameter = () => alert('Hello World!');
+// Funcoes mais Longas / Calculando Imposto
+const tax = (salary) => {
+  let taxable = salary - 8000;
+  const lowerRate = 0.25 * taxable;
+  taxable = taxable - 20000;
+  const higherRate = 0.4 * taxable;
+  return lowerRate + higherRate;
+}
