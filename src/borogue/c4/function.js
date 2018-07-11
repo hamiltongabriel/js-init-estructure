@@ -84,3 +84,10 @@ const tax = (salary) => {
   const higherRate = 0.4 * taxable;
   return lowerRate + higherRate;
 }
+// Funçao de içamento (Hoisting)
+// içamento = mover todas as variaveis e declaracao de funcao do javascript para o topo
+// Deixando a mesma possivel de ser invocada antes de ser definida.
+console.log(hoist());
+function hoist() {
+  console.log('Hoist Me')
+}
