@@ -57,3 +57,14 @@ function meanMelhorada(...values) {
   return total/values.length;
 }
 console.log(meanMelhorada(2, 4, 5))
+//Parametros Padrao
+function helloPadrao(name='world'){
+  console.log(`Hello ${name}`)
+}
+console.log(helloPadrao('kkkk'))
+//Fornecer os valores padrao apos os nao padroes.
+function discount(price, amount=10) {
+  return `Valor com desconto aplicado de ${amount}% ${price*(100-amount)/100}`
+}
+console.log(discount(20, 11));
+console.log(discount(15, 20));
