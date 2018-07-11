@@ -49,10 +49,11 @@ function rest (...args){
 }
 console.log(rest(2, 4, 6, 8));
 // Melhorando a funcao mean para receber qualquer parametro
-function mean(...values) {
+function meanMelhorada(...values) {
   let total = 0;
   for (const value of values){
     total += value;
   }
   return total/values.length;
 }
+console.log(meanMelhorada(2, 4, 5))
