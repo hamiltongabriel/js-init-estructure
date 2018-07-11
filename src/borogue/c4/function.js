@@ -91,3 +91,20 @@ console.log(hoist());
 function hoist() {
   console.log('Hoist Me')
 }
+// Callbacks retorno de chamadas.
+// Funcoes podem ser parametros de outras funcoes,
+function sing(song) {
+  console.log(`I'm singing along to ${song}`);
+}
+sing('Let It Go')
+function singFlexivel(song, callback) {
+  console.log(`I'm singing along to ${song}`);
+  if (typeof (callback) === 'function') {
+    callback();
+  }
+}
+function dance (){
+  console.log("I'm moving my body to the groove.");
+}
+// Passo o argumento dance sem parenteses, por ser uma referencia, e o callback, chama o parenteses para emitir a funcao
+singFlexivel('Let It Go', dance);
