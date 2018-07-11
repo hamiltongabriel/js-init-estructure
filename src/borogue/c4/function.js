@@ -39,3 +39,13 @@ console.log(mean(1, 3, 8))
 function arguments() {
   return arguments;
 }
+// Arguments nao sao retornados em arrays
+console.log(arguments('hello', NaN))
+// usando o operador rest para criar uma matriz e lidar com varios argumentos
+function rest (...args){
+  for(arg of args){
+    console.log(arg);
+  }
+}
+console.log(rest(2, 4, 6, 8));
+
