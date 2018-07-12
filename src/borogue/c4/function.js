@@ -108,3 +108,30 @@ function dance (){
 }
 // Passo o argumento dance sem parenteses, por ser uma referencia, e o callback, chama o parenteses para emitir a funcao
 singFlexivel('Let It Go', dance);
+// Classificando matriz com um retorno de chamada.
+// Retorno de chmada para ordenacao de numeros.
+function numerically(a, b) {
+  return a-b
+}
+[1,3,24,53,32,123,12,13].sort(numerically);
+// 2 Plano evitando estouro.
+function numericallyAlterada(a, b){
+  if (a < b){
+    return -1;
+  } else if (a > b){
+    return 1;
+  } else {
+    return 0;
+  }
+}
+// Iteradores de Array (Array iteretors)
+//Percorrendo cada valor de um array.
+const colors = ['Red', 'Green', 'Blue']
+for (let i = 0, max = colors.length; i < max; i++){
+  console.log(`Color at position ${i} is ${colors[i]}`);
+}
+// Melhorando a funcao colors. (forEach())
+//Isso fará um loop na matriz e chamará uma função de retorno de chamada usando cada valor como um argumento. A função de retorno de chamada leva três parâmetros, o primeiro representa o valor na matriz, o segundo representa o índice atual e o terceiro representa a matriz que o retorno de chamada está sendo chamado.
+colors.forEach((color, index) =>{
+  console.log(`Color at position ${index} is ${color}`);
+  })
