@@ -157,3 +157,8 @@ const sentence = 'A rápida raposa marrom saltou sobre o cão preguiçoso';
 words = sentence.split(` `);
 // Calculando o numero total de letras com reduce()
 const total = words.reduce( (acc, word) => acc + word.length, 0);
+// Metodo Filter()
+// O método filter () retorna uma nova matriz que contém apenas itens da matriz original que retornam true quando passados para o retorno de chamada.
+// Filtrando numeros pares
+const numbers = [2, 7,6, 5, 11, 23, 12, 8];
+console.log(numbers.filter(x => x%2 === 0)); // Return true se o numero for par
