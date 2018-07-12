@@ -146,3 +146,14 @@ console.log(['red', 'green', 'blue'].map( color => `<p> ${color.toUpperCase()} <
 // Usando os 3 parametros que o map me fornece.
 console.log(['red', 'green', 'blue'].map( (color, index, array) => `Elemento ${index} é ${color}. contem ${array.length} items no total`));
 
+// Metodo Reduce()
+// O método reduce () é outro método que se repete sobre cada valor na matriz, mas desta vez combina cumulativamente cada resultado para retornar apenas um único valor. A função de retorno de chamada é usada para descrever como combinar cada valor da matriz com o total em execução. Isso geralmente é usado para calcular estatísticas, como médias de dados armazenados em uma matriz. Geralmente, são necessários dois parâmetros. O primeiro parâmetro representa o valor acumulado de todos os cálculos até o momento e o segundo parâmetro representa o valor atual na matriz.
+// Realizando uma soma.
+console.log([1, 2, 3, 4, 5].reduce( (acc, val) => acc + val));
+// Passando um valor inicial.
+console.log([1, 2, 3, 4, 5].reduce( (acc, val) => acc + val, 10));
+// Calculando o tamanho de uma frase.
+const sentence = 'A rápida raposa marrom saltou sobre o cão preguiçoso';
+words = sentence.split(` `);
+// Calculando o numero total de letras com reduce()
+const total = words.reduce( (acc, word) => acc + word.length, 0);
