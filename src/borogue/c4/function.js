@@ -181,4 +181,3 @@ function meanMelhoradaDois(array, callback){
 }
 // 2*x multiplicara x2 cada item do array;
 console.log(meanMelhoradaDois([2, 5, 7, 11, 4],x => 2*x))
-console.log(meanMelhoradaDois([2, 5, 7, 11, 4], square())
