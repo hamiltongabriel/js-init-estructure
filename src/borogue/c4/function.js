@@ -135,7 +135,8 @@ for (let i = 0, max = colors.length; i < max; i++){
 colors.forEach((color, index) =>{
   console.log(`Color at position ${index} is ${color}`);
   })
-//Metodo Map()
+
+//Metodo Map()O
 // O método map () é muito semelhante ao método forEach (). Ele também faz iteração em uma matriz e recebe uma função de retorno de chamada como um parâmetro que é chamado em cada item da matriz. Isso geralmente é usado para processar dados retornados de bancos de dados em forma de matriz, como adicionar tags HTML a texto sem formatação.
 // E retorna um array.
 console.log([1, 2, 3].map( square ))
@@ -144,3 +145,4 @@ console.log([1, 2, 3].map( x => 2 * x));
 console.log(['red', 'green', 'blue'].map( color => `<p> ${color.toUpperCase()} </p>`));
 // Usando os 3 parametros que o map me fornece.
 console.log(['red', 'green', 'blue'].map( (color, index, array) => `Elemento ${index} é ${color}. contem ${array.length} items no total`));
+
