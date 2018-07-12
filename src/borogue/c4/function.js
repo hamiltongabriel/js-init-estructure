@@ -170,3 +170,15 @@ console.log(numbers.filter(x => x%2 === 0)); // Return true se o numero for par
 // Aplicando imposto a produtos para revenda.
 const sales = [100, 230, 55];
 totalAfterTaxSales = sales.map( (montante) => montante * 1.15).reduce((acc, val) => acc + val);
+
+// Melhorando a funcao mean com reduce, e callback para aplicar uma certa funcao.
+function meanMelhoradaDois(array, callback){
+  if (callback) {
+    array.map( callback );
+  }
+  const total = array.reduce((a, b) => a + b);
+  return total/array.length;
+}
+// 2*x multiplicara x2 cada item do array;
+console.log(meanMelhoradaDois([2, 5, 7, 11, 4],x => 2*x))
+console.log(meanMelhoradaDois([2, 5, 7, 11, 4], square())
