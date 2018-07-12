@@ -162,3 +162,11 @@ const total = words.reduce( (acc, word) => acc + word.length, 0);
 // Filtrando numeros pares
 const numbers = [2, 7,6, 5, 11, 23, 12, 8];
 console.log(numbers.filter(x => x%2 === 0)); // Return true se o numero for par
+
+// Encadeando iteradores juntos.
+// As várias funções do iterador podem ser usadas em combinação para criar algumas transformações poderosas de dados armazenados em matrizes. Isto é conseguido por um processo chamado métodos de encadeamento juntos. O encadeamento funciona porque as funções do iterador retornam uma matriz, o que significa que outra função do iterador pode ser encadeada no final e será aplicada à nova matriz.
+// Soma de numeros quadrados, e encadeando no metodo reduce.
+[1, 2, 3].map( x => x*x ).reduce((acc, x) => acc + x);
+// Aplicando imposto a produtos para revenda.
+const sales = [100, 230, 55];
+totalAfterTaxSales = sales.map( (montante) => montante * 1.15).reduce((acc, val) => acc + val);
