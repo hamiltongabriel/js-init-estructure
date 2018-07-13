@@ -38,8 +38,15 @@ console.log(supergirl);
 const realNameSymbol = Symbol('real name');
 supergirl[realNameSymbol] = 'Kara Danvers';
 console.log(supergirl);
-const daredevil = { [nameSymbol]: 'Daredevil', [realNameSymbol]: 'Matt Murdoch' }
+const daredevil = { [nameSymbol]: 'Daredevil', [realNameSymbol]: 'Matt Murdoch' };
 console.log(daredevil);
 // Acessando Symbol
 // Symbol tem nomenclatura unica.
 console.log(daredevil[nameSymbol]);
+
+// Chamada de Metodos
+console.log(superman.fly());
+
+// Verificando se propriedade ou methodo existe.
+// Operador in verifica se um objeto possui uma certa propriedade
+console.log('city' in superman);
