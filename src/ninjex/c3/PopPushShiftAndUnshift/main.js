@@ -7,3 +7,4 @@ console.log(avengers.shift());
 console.log(avengers.push('Thor'));
 // Adiciona um novo valor no inicio do Array e retorna o tamanho da variavel...
 avengers.unshift('Captain American');
+console.log(avengers);
