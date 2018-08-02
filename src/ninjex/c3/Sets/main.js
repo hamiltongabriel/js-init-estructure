@@ -28,6 +28,7 @@ const arrays = new Set().add([1]).add([1]);
 console.log(arrays);
 // Ambas são consideradas objetos diferentes.
 console.log([0] === [0]);
-
+// Quando adicionamos uma String com valor numeral e um numero, ele aceita por nao
+// tentar fazer conversao.
 const mixedTypes = new Set().add(2).add('2');
 console.log(mixedTypes);
