@@ -68,3 +68,18 @@ function mean(...values){
   return console.log(total/values.length);
 }
 mean(2, 4, 5, 6)
+
+// Parametros padrão
+function helllo(name ='world'){
+  console.log(`Hello ${name}`)
+}
+// valor padrão
+helllo();
+// argumento especificado.
+helllo('Hamilton');
+
+// Valor padrão desconto de um loja.
+function discount(price, amount=10){
+  return price*(100-amount)/100;
+}
+console.log(discount(100));
