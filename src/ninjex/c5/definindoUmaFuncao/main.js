@@ -38,3 +38,33 @@ function mean(a, b, c) {
   return console.log((a + b + c)) / 3;
 }
 mean(1, 3, 6);
+
+// Função de Argumentos
+function arguments() {
+  return arguments;
+}
+console.log(arguments('hello', NaN))
+
+// Rest coletando os argumentos da funcao, e atribuindo a funcao rest.
+
+function rest(...args){
+  return args;
+}
+console.log(rest(2, 3, 4, 5, 6));
+// Percoreendo todos os dados colocados como argumento.
+function restTwo(...args){
+  for(arg of args){
+    console.log(arg);
+  }
+}
+restTwo(3, 5, 6);
+
+// Mean Function
+function mean(...values){
+  let total = 0;
+  for(const value of values){
+    total += value;
+  }
+  return console.log(total/values.length);
+}
+mean(2, 4, 5, 6)
