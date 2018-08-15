@@ -13,3 +13,4 @@ function dance() {
 }
 // Callback com função anonima.
 sing('Amo', () => { console.log('Hamilton'); });
+
