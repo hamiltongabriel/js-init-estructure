@@ -11,5 +11,14 @@ function recebeValor(a, b) {
     return a - b;
   }
 }
-
 console.log([1, 5, 4, 5, 12, 3, 12312, 123, 1].sort(recebeValor));
+// Quando ocorrer estouro de numeros menores, optar por uma função mais detalhista.
+function numerically(a, b) {
+  if (a < b) {
+    return -1;
+  }
+  if (a > b) {
+    return 1;
+  }
+  return 0;
+}
