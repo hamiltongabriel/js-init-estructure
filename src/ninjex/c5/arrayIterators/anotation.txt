@@ -1,0 +1,31 @@
+Iterators = Aquilo que percorre uma matriz.
+Os arrays têm vários métodos que utilizam retornos de chamada para torná-los mais flexíveis.
+
+Arrays São objetos modificados. Cada array que criamos tem alguns métodos disponiveis a serem usados.
+Métodos disponiveis em um Objeto de Array.
+concat = une vários arrays e retorna uma cópiad dos arrays unidos.
+every = isso itera todos os elementos da matriz, verificando uma condição desejada(função) até que falso seja retornado.
+filter = Isso executa uma função especifica em cada elemento do array.
+join = Une todos os elementos do Array em uma String
+indexOf = Procura no array elementos especificos e retorna sua posição
+lasIndexOf = retorna a posição do ultimo item no array que corresponde aos criterios de pesquisa.
+map = isso cria um Array a partir de uma função que contem o criterio / condição e retorna os elementos do array que correspondem aos criterios.
+Reverse = Reverte o array para que os ultimos itens se tornem os primeiros e vice-versa.
+slice = isso retorna um novo array do index especificado.
+some = Itera todos os elementos do array, veirificando uma condição desejada (função) até que a verdadeira seja retornada.
+sort = Classifica o array em ordem alfabetica ou pela função fornecida
+toString = isso retorna o array como uma String
+valueOf = Retorna um array como String também.
+
+--> ECMA 6 And 7
+@@iterator = Retorna um objeto iterator que contem os pares de key/value que podem ser chamados de forma sincrona para recuperar a key/value dos elementos do array.
+copyWithin = Copia uma sequencia de valores do Array na posição de um indice inicial.
+entries = Retorna @@iterator que contem pares de key/value
+includes = retorna true caso de um elemento ser encontrado no Array, e false caso contrário.
+find = Procura um elemento no array que recebe uma condição desejada (função de retorno de chamada) e retorna o elemento caso seja encontrado.
+findIndex = Retorna o indice do elemento.
+fill = Preenche a matriz com um valor estático.
+from = Cria um novo array a partir de um já existente.
+keys = retorna um @@iterator, que contem as chaves da matriz.
+of = cria um novo array apartir dos argumentos passados para o metodo.
+values = retorna @@iterator, que contem os valores da matriz.
