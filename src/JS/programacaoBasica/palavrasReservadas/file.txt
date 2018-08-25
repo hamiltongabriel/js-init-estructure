@@ -1,0 +1,17 @@
+abstract
+awai
+boolean
+break
+byte
+case
+catch
+char
+class
+const
+continue
+/*/
+Não reservadas.
+Porém nao recomendo o uso
+undefined
+NaN
+infinity
