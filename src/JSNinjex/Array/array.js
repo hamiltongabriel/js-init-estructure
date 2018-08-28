@@ -27,7 +27,7 @@ console.log(avengers);
 // Desestruturação de Arrays.
 // Desestruturar um array e aprensetar como valores individuais.
 // Podendo atribuir vários valores de uma só vez.
-const [x, y] = [1, 2];
+let [x, y] = [1, 2];
 // Mesmo se atribuirmos em Arrays, cada variavel individual tera seu valor
 console.log(x);
 console.log(y);
@@ -36,4 +36,10 @@ console.log(y);
 console.log(x);
 console.log(y);
 
-
+const avengers1 = ['Captain America', 'Iron Man', 'Thor', 'Hulk', 'Hawkeye', 'Black Widow'];
+// Acessando a ultima propriedade do index.
+console.log(avengers1[avengers1.length - 1]);
+// Se especificar o tamanho de um array menor do tamanho dele.
+// Ira remover os demais atributos por completo.
+avengers1.length = 3;
+console.log(avengers1);
