@@ -43,3 +43,13 @@ console.log(avengers1[avengers1.length - 1]);
 // Ira remover os demais atributos por completo.
 avengers1.length = 3;
 console.log(avengers1);
+
+// Removendo o ultimo item de um Array
+console.log(avengers1.pop());
+// Removendo o primeiro item de um Array
+console.log(avengers1.shift());
+// Adicioanndo um novo item ao final de um array.
+avengers1.push('Thor');
+// Adicionando um novo item no inicio de um array
+avengers1.unshift('Captain America');
+console.log(avengers1)
